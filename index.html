@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Travel to the Philippines</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "font/fonts.css">
+        <!-- normalize css -->
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+    </head>
+    <body>
+        <!-- navbar  -->
+        <nav class = "navbar">
+            <div class = "container flex">
+                <a href = "index.html" class = "site-brand">
+                    Travel<span> to the Philippines</span>
+                </a>
+
+                <button type = "button" id = "navbar-show-btn" class = "flex">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "index.html" class = "nav-link">Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "gallery.html" class = "nav-link">Gallery</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "food.html" class = "nav-link">Traditional Food</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "about.html" class = "nav-link">About</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "contact.html" class = "nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar  -->
+
+        <!-- header -->
+        <header class = "flex">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1>Leave a good memory of where you are going</h1>
+                    <p>Hello tourists and welcome to the lovely, and beautiful Philippines! The Philippines will never fail to amaze you. The stunning sights above and under the sea, the culture, the hospitality, the food, and of course, the friendly people willing to welcome visitors wherever and whenever.</p>
+                </div>
+                <div class="header-form">
+                    <h2>Choose your Travel location:</h2>
+                    <div id="travel-success-message" class="success-message" style="display: none;">
+                        Thank you for your search! We will process your request.
+                    </div>
+                    <form id="travel-form" class="flex">
+                        <input type="text" id="destination" class="form-control" placeholder="Destination name" required>
+                        <input type="date" id="travel-date" class="form-control" placeholder="Date" required>
+                        <input type="number" id="tourist-num" class="form-control" placeholder="Tourist number" required>
+                        <input type="submit" class="btn" value="Search">
+                    </form>
+                </div>
+                
+            </div>
+        </header>
+        <!-- header -->
+
+        <!-- featured section -->
+        <section id = "featured" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">know about some places before your travel</span>
+                    <h2 class = "lg-title">featured places</h2>
+                </div>
+
+                <div class = "featured-row">
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-boracay.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Boracay, Island in Malay, Aklan
+                            </span>
+                            <div>
+                                <p class = "text">Boracay is a small island in the central Philippines. It's known for its resorts and beaches. Along the west coast, White Beach is backed by palm trees, bars and restaurants. On the east coast,</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-palawan-.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Coron, Palawan
+
+                            </span>
+                            <div>
+                                <p class = "text">Coron, officially the Municipality of Coron, is a 1st class municipality in the province of Palawan, Philippines. According to the 2020 census, it has a population of 65,855 people.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-chocolatehills.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Chocolate Hills, Geological formation in the Philippines
+                            </span>
+                            <div>
+                                <p class = "text">The Chocolate Hills are a geological formation in the Bohol province of the Philippines. There are at least 1,260 hills, but there may be as many as 1,776 hills spread over an area of more than 50 square kilometers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-Mayon Volcano.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Mayon Volcano
+                            </span>
+                            <div>
+                                <p class = "text">Mayon, also known as Mount Mayon and Mayon Volcano, is an active stratovolcano in the province of Albay in Bicol, Philippines.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-Siargao.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Surigao del Norte
+                            </span>
+                            <div>
+                                <p class = "text">Surigao del Norte, officially the Province of Surigao del Norte, is a province in the Philippines located in the Caraga region of Mindanao. The province was formerly under the jurisdiction of Region 10 until 1995. Its capital is Surigao City. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-tagaytay.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Tagaytay 
+                            </span>
+                            <div>
+                                <p class = "text">Tagaytay is a popular holiday town south of Manila on the Philippine island Luzon. Known for its mild climate, it sits on a ridge above Taal Volcano Island, an active volcano surrounded by Taal Lake.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of featured section -->
+
+        <!-- services section -->
+        <section id = "services" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">know about services that we offer</span>
+                    <h2 class = "lg-title">Our services</h2>
+                </div>
+
+                <div class = "services-row">
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-hotel"></i>
+                        </span>
+                        <h3>Luxurious Hotel</h3>
+                        <p class = "text">Philippines promise tourists an exclusive and personalized experience with world-class accommodations, fine dining, spa indulgence, and unique activities amidst breathtaking natural surroundings.</p>
+                        <a href = "#" class = "btn">Read more</a>
+                    </div>
+
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-map-marked-alt"></i>
+                        </span>
+                        <h3>Trave Guide</h3>
+                        <p class = "text">A travel guide promises tourists expert local knowledge, insider tips, and curated experiences to enhance their journey, ensuring they discover the best attractions, dining spots, cultural insights, and hidden gems of their destination.</p>
+                        <a href = "#" class = "btn">Read more</a>
+                    </div>
+
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-money-bill"></i>
+                        </span>
+                        <h3>Suitable Price</h3>
+                        <p class = "text">A suitable price for a tourist traveling to the Philippines ranges from $45 per day for budget travelers, $130 per day for mid-range travelers, to $300 per day for luxury travelers.</p>
+                        <a href = "#" class = "btn">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of services section -->
+
+        <!-- testimonials section -->
+        <section id = "testimonials" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">what our clients say about us</span>
+                    <h2 class = "lg-title">testimonials</h2>
+                </div>
+
+                <div class = "test-row">
+                    <div class = "test-item">
+                        <p class = "text">Traveling to the Philippines was a dream come true. The breathtaking beaches and warm hospitality made it an unforgettable trip. The seamless arrangements by the travel agency ensured a hassle-free experience.</p>
+                        <div class = "test-item-info">
+                            <img src = "images/test-1.jpg" alt = "testimonial">
+                            <div>
+                                <h3>John Wilson</h3>
+                                <p class = "text">From to Brazil</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "test-item">
+                        <p class = "text">Our trip to the Philippines was amazing! The vibrant culture and stunning landscapes exceeded our expectations. The travel agency's attention to detail and personalized service made all the difference.</p>
+                        <div class = "test-item-info">
+                            <img src = "images/test-2.jpg" alt = "testimonial">
+                            <div>
+                                <h3>Sarah Davis</h3>
+                                <p class = "text">From to Austratia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "test-item">
+                        <p class = "text">The Philippines offered a perfect mix of adventure and relaxation. The diving spots were incredible, and the natural beauty was unparalleled. Kudos to the travel team for organizing such a memorable trip!</p>
+                        <div class = "test-item-info">
+                            <img src = "images/test-3.jpg" alt = "testimonial">
+                            <div>
+                                <h3>Emily kim   </h3>
+                                <p class = "text">From to Korea</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of testimonials section -->
+
+        <!-- video section -->
+        <section id = "video">
+            <div class = "video-wrapper flex">
+                <video loop>
+                    <source src = "videos/tp.mp4" type = "video/mp4">
+                </video>
+                <button type = "button" id = "play-btn">
+                    <i class = "fas fa-play"></i>
+                </button>
+            </div>
+        </section>
+        <!-- end of video section -->
+
+        <!-- footer -->
+        <footer class = "py-4">
+            <div class = "container footer-row">
+                <div class = "footer-item">
+                    <a href = "index.html" class = "site-brand">
+                        Travel<span> to the Philippines</span>
+                    </a>
+                    <p class = "text">The Philippines is also home to world-renowned natural wonders like an underground river and rice terraces, incredible diving spots rich in biodiversity, colorful public transportation in the Philippines, unique cuisine, vibrant festivals that showcase its colorful culture, and friendly.</p>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Follow us on: </h2>
+                    <ul class = "social-links">
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-google-plus"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Popular Places:</h2>
+                    <ul>
+                        <li><a href = "#">Manila</a></li>
+                        <li><a href = "#">Boracay</a></li>
+                        <li><a href = "#">Palawan</a></li>
+                        <li><a href = "#">Bagio</a></li>
+                        <li><a href = "#">Tagaytay</a></li>
+                    </ul>
+                </div>
+
+                <div class="subscribe-form footer-item">
+                    <h2>Subscribe to our Website!</h2>
+                    <div id="subscribe-success-message" class="success-message" style="display: none;">
+                      Thank you for subscribing!
+                    </div>
+                    <form id="subscribe-form" class="flex">
+                      <input type="email" id="subscribe-email" placeholder="Enter Email" class="form-control" required>
+                      <input type="submit" class="btn" value="Subscribe">
+                    </form>
+                  </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+
+        <!-- js -->
+        <script src = "js/script.js"></script>
+        <script>
+            // play/pause video
+            let video = document.querySelector('.video-wrapper video');
+            document.getElementById('play-btn').addEventListener('click', () => {
+                if(video.paused){
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        </script>
+    </body>
+</html>
